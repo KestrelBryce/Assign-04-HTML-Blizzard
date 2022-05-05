@@ -1,0 +1,1 @@
+[![GitHub's Super Linter](https://github.com/KestrelBryce/Assign-04-HTML-Blizzard/actions/workflows/main.yml/badge.svg)](https://github.com/KestrelBryce/Assign-04-HTML-Blizzard/actions)
