@@ -32,7 +32,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Museum discount calculator</span>
+          <span class="mdl-layout-title">Dairy Queen Blizzard calculator</span>
         </div>
       </header>
 
@@ -41,7 +41,7 @@
       <br></br>
       
       <center>
-        <p>Enter your age and the current day of the week so that the program can determine if you are eligable for discounted museum admission.</p>
+        <p>Enter your order from Dairy Queen and the calculator will determine how much it will cost.</p>
       </center>
 
       <!-- page break -->
@@ -57,58 +57,80 @@
       <!-- page break -->
       <br></br>
 
-      <center>  <p>Insert your age below:</p>  </center>
+      <center>  <p>Insert your order below:</p>  </center>
+
+      <!-- page break -->
+      <br></br>
       
       <!-- User input -->
-  
-        <!-- Enter Age textbox -->   
-        <center>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step="1"
-              min="1"
-              id="Inserted-age-here"
-            />
-            <label class="mdl-textfield__label" for="Inserted-age-here">Numbers go here...</label>
-            <span class="mdl-textfield__error">…Nobody says their age like that. No normal people, at least. Give a whole number please -_-</span>
-          </div>
-
-          <!-- page break -->
-          <br></br>
-          
-        <!-- Enter Day dropbox -->
-        <form action="/script.js">
-  <label for="insert-Day-Here">Select a day of the week:</label>
-  <select name="insert-Day-Here" id="insert-Day-Here">
-    <option value="Monday">Monday</option>
-    <option value="Tuesday">Tuesday</option>
-    <option value="Wednesday">Wednesday</option>
-    <option value="Thursday">Thursday</option>
-    <option value="Friday">Friday</option>
-    <option value="Saturday">Saturday</option>
-    <option value="Sunday">Sunday</option>
+      
+      <!-- Blizzard Size dropbox -->
+      <center
+      <form action="/script.js">
+  <label for="insert-Size-Here">Select a Blizzard size:</label>
+  <select name="insert-Size-Here" id="insert-Size-Here">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
   </select>
   <br><br>
-  <!-- <input type="submit" value="Submit"> -->
-</form>
-
-        <!-- page break -->
-        <br></br>
-
-              <!-- Button -->
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:displayGreeting ()">
-          <p>Check results</p>
-        </button>
-        <br />
-        <p>
-          <div id="greeting">
-
-          </div> 
+  </form>
+      </center>
+      
+    <!-- page break -->
+    <br></br>
+          
+    <!-- Blizzard Flavour dropbox -->
+        <center>
+        <form action="/script.js">
+  <label for="insert-Flavour-Here">Select a Blizzard Flavour:</label>
+  <select name="insert-Flavour-Here" id="insert-Flavour-Here">
+    <option value="Girl-Scouts">Girl Scouts thin mints</option>
+    <option value="Oreo">Oreo</option>
+    <option value="Mint-Oreo">Mint Oreo</option>
+    <option value="Rocky-Road">Rocky Road</option>
+    <option value="Candy">Candy Cane chill</option>
+  </select>
+  <br><br>
+  </form>
         </center>
 
-      </main>
-    </div>
+    <!-- page break -->
+    <br></br>
+
+    <!-- Drink Flavour dropbox -->
+        <center>
+        <form action="/script.js">
+  <label for="insert-Drink-Here">Select a Soft Drink (optional):</label>
+  <select name="insert-Drink-Here" id="insert-Drink-Here">
+    <option value="Ginger-Ale">Ginger Ale</option>
+    <option value="Pepsi">Pepsi</option>
+    <option value="Coca-Cola">Coca Cola</option>
+    <option value="Fanta">Fanta</option>
+    <option value="Dr-Pepper">Dr.Pepper</option>
+  </select>
+  <br><br>
+  </form>
+        </center>
+
+    <!-- page break -->
+    <br></br>
+
+    <!-- Button -->
+    <center>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:displayGreeting ()">
+      <p>Check results</p>
+        </button>
+        <br />
+      <p>
+        <div id="greeting">
+
+        </div> 
+      </p>
+    </center>
+
+    <!-- page break -->
+    <br></br>
+
   </body>
 </html>

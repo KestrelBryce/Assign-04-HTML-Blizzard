@@ -1,12 +1,14 @@
-  /* This function compares the user's age and the day of the week to discounts at a museum to see if the user is eligable. 
+  /* This function gets the user's Dairy Queen order and calculates the cost. 
 */
 
 function displayGreeting () {
 
     // user input
-  let userAge = parseInt((document.getElementById('Inserted-age-here').value));
+  let BSize = (document.getElementById('insert-Size-Here').value);
 
-  let dayWeek = (document.getElementById('insert-Day-Here').value);
+  let BFlav = (document.getElementById('insert-Flavour-Here').value);
+
+  let Drink = (document.getElementById('insert-Drink-Here').value);
 
     // Remember to write || by using shift on \ twice
   
