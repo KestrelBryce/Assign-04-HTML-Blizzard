@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- favicon -->
-    <link rel="DINOSAUR-ICON" sizes="180x180" href="./fav_index/DINOSAUR-ICON.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/DINOSAUR-ICON.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/DINOSAUR-ICON.png" />
+    <link rel="Dairy_Queen" sizes="180x180" href="./fav_index/Dairy_Queen.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/Dairy_Queen.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/Dairy_Queen.png" />
 
     <!-- Misc style -->
     <link rel="manifest" href="./fav_index/site.webmanifest" />
@@ -69,9 +69,9 @@
       <form action="/script.js">
   <label for="insert-Size-Here">Select a Blizzard size:</label>
   <select name="insert-Size-Here" id="insert-Size-Here">
-    <option value="Small">Small</option>
-    <option value="Medium">Medium</option>
-    <option value="Large">Large</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
   </select>
   <br><br>
   </form>
@@ -85,11 +85,11 @@
         <form action="/script.js">
   <label for="insert-Flavour-Here">Select a Blizzard Flavour:</label>
   <select name="insert-Flavour-Here" id="insert-Flavour-Here">
-    <option value="Girl-Scouts">Girl Scouts thin mints</option>
-    <option value="Oreo">Oreo</option>
-    <option value="Mint-Oreo">Mint Oreo</option>
-    <option value="Rocky-Road">Rocky Road</option>
-    <option value="Candy">Candy Cane chill</option>
+    <option value="girl-Scouts">Girl Scouts thin mints</option>
+    <option value="oreo">Oreo</option>
+    <option value="mint-Oreo">Mint Oreo</option>
+    <option value="rocky-Road">Rocky Road</option>
+    <option value="candy-Cane">Candy Cane chill</option>
   </select>
   <br><br>
   </form>
@@ -100,18 +100,22 @@
 
     <!-- Drink Flavour dropbox -->
         <center>
-        <form action="/script.js">
-  <label for="insert-Drink-Here">Select a Soft Drink (optional):</label>
-  <select name="insert-Drink-Here" id="insert-Drink-Here">
-    <option value="Ginger-Ale">Ginger Ale</option>
-    <option value="Pepsi">Pepsi</option>
-    <option value="Coca-Cola">Coca Cola</option>
-    <option value="Fanta">Fanta</option>
-    <option value="Dr-Pepper">Dr.Pepper</option>
-  </select>
-  <br><br>
-  </form>
-        </center>
+          <form action="/script.js"> <!-- <- I don't think this is right -->
+  <p>Select a drink flavour (optional):</p>
+  <input type="radio" checked="True" id="no-Drink" name="insert-Drink-Here" value="No drink">
+  <label for="no-Drink">No drink</label><br>
+  <input type="radio" id="ginger-Ale" name="insert-Drink-Here" value="Ginger ale">
+  <label for="ginger-Ale">Ginger ale</label><br>
+  <input type="radio" id="pepsi" name="insert-Drink-Here" value="Pepsi">
+  <label for="pepsi">Pepsi</label><br>
+  <input type="radio" id="coca-Cola" name="insert-Drink-Here" value="Coca Cola">
+  <label for="coca-Cola">Coca Cola</label><br>
+  <input type="radio" id="fanta" name="insert-Drink-Here" value="Fanta">
+  <label for="fanta">Fanta</label><br>
+  <input type="radio" id="dr-Pepper" name="insert-Drink-Here" value="Dr Pepper">
+  <label for="dr-Pepper">Dr.Pepper</label><br>
+</form>
+      </center>
 
     <!-- page break -->
     <br></br>
@@ -134,3 +138,17 @@
 
   </body>
 </html>
+
+
+ <!-- <form action="/script.js">
+  <label for="insert-Drink-Here">Select a Soft Drink (optional):</label>
+  <select name="insert-Drink-Here" id="insert-Drink-Here">
+    <option value="No-drink">No drink</option>
+    <option value="Ginger-Ale">Ginger Ale</option>
+    <option value="Pepsi">Pepsi</option>
+    <option value="Coca-Cola">Coca Cola</option>
+    <option value="Fanta">Fanta</option>
+    <option value="Dr-Pepper">Dr.Pepper</option>
+  </select>
+  <br><br>
+  </form> -->

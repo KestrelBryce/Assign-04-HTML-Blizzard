@@ -10,27 +10,63 @@ function displayGreeting () {
 
   let Drink = (document.getElementById('insert-Drink-Here').value);
 
+
+    // Constants
+  let TaxRate = 0.13;
+
     // Remember to write || by using shift on \ twice
-  
-    // Process
-    // Free admission
-  if ((userAge < 5) || (userAge > 95)) {
-    document.getElementById("greeting").innerHTML = "You are " + userAge + ", which means you are eligable for free admission."
-  }
-  
-    // Student discount
-  else if ((userAge >= 12) && (userAge <= 21)) {
-    document.getElementById("greeting").innerHTML = "You are " + userAge + ", which means you are eligable for a student discount."
+
+    // Drink calculate Process
+  if (Drink == Ginger Ale) {
+    let DrinkCost = 1.89
   }
 
-    // Day discount
-  else if ((dayWeek == "Tuesday" || dayWeek == "Thursday")) {
-    document.getElementById("greeting").innerHTML = "It is " + dayWeek + ", which means you are eligable for a discount today."
+  else if (Drink == Pepsi) {
+    let DrinkCost = 1.79
   }
 
-  // Normal admission
-  else {
-    document.getElementById("greeting").innerHTML = "Sorry, you don't meet any of the requirements for a discount. You need to pay the regular admission fee."
+  else if (Drink == CocaCola) {
+    let DrinkCost = 1.99
   }
+
+  else if (Drink == Fanta) {
+    let DrinkCost = 1.49
+  }
+
+  else if (Drink == Dr Pepper) {
+    let DrinkCost = 1.59
+  }
+
+  else if (Drink == No drink) {
+    let DrinkCost = 0
+  }
+
+    // Variables
+  let YDrinkSub = BSize + BFlav + DrinkCost;
+
+  let NDrinkSub = BSize + BFlav;
+
+
+  if () {
+    document.getElementById("greeting").innerHTML = "You are" + Drink + ", which means you are eligable for a student discount."
+  }
+    
+    // Order calculate Process
+    // YDrinkSub tax
+  //if (DrinkCost > 0) {
+    //let YDrinkTax = YDrinkSub * TaxRate
+    //let YDrinkTotal = YDrinkSub + YDrinkTax
+    //document.getElementById("greeting").innerHTML = "You are " + DrinkCost + ", which means you are eligable for a student discount."
+  }
+  
+    // NDrinkSub tax
+  //else if ((userAge >= 12) && (userAge <= 21)) {
+  //  document.getElementById("greeting").innerHTML = "You are " + userAge + ", which means you are eligable for a student discount."
+  //}
 
 }
+
+
+  //else if ((userAge >= 12) && (userAge <= 21)) {
+  //  document.getElementById("greeting").innerHTML = "You are " + userAge + ", which means you are eligable for a student discount."
+  //}
