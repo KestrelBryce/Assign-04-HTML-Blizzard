@@ -3,18 +3,20 @@
 
 function displayGreeting () {
 
+ //document.getElementById("greeting").innerHTML = "Hi"
     // user input
   let BSize = (document.getElementById('insert-Size-Here').value);
 
   let BFlav = (document.getElementById('insert-Flavour-Here').value);
+  
+  let Drink = (document.querySelector('input[name=insert-Drink-Here]:checked').value);
 
-  let Drink = (document.getElementById('insert-Drink-Here').value);
-
-
+  //document.getElementById("greeting").innerHTML = "Hi"
+    
     // Constants
-  let TaxRate = 0.13;
+  let taxRate = 0.13;
 
-  let gAPrice = 1.89;
+  /*let gAPrice = 1.89;
 
   let pepsiPrice = 1.79;
 
@@ -22,8 +24,10 @@ function displayGreeting () {
 
   let fantaPrice = 1.49;
 
-  let drPepperPrice = 1.59;
+  let drPepperPrice = 1.59;*/
 
+  //document.getElementById("greeting").innerHTML = "Hi"
+  
     // Remember to write || by using shift on \ twice
 
     // Size calculate process
@@ -38,81 +42,105 @@ function displayGreeting () {
   else {
     BSizeCost = 5.30;
   }
+    //document.getElementById("greeting").innerHTML = "Hi"
 
+    //document.getElementById("greeting").innerHTML = BSizeCost
+  //document.getElementById("greeting").innerHTML = Drink
 
-    // Flavour calculate process
-  if () {
-    BFlavCost = ;
+    // Drink calculate process
+  
+  if (Drink == 'Ginger-ale') {
+    drinkCost = 1.89;
   }
 
-  else if () {
-    BFlavCost = ;
+  else if (Drink == "Pepsi") 
+  {
+    drinkCost = 1.79;
   }
 
-  else if () {
-    BFlavCost = ;
-
-
-  else if () {
-    BFlavCost = ;
+  else if (Drink == "Coca-Cola") 
+  {
+    drinkCost = 1.99;
   }
 
-  else {
-    BFlavCost = ;
+  else if (Drink == "Fanta") 
+  {
+    drinkCost = 1.49;
+  }
+
+  else if (Drink == "Dr-Pepper") 
+  {
+    drinkCost = 1.59;
+  }
+
+  else if (Drink == "No-Drink") 
+  {
+    drinkCost = 0;
+  }
+
+
+
+    // Flavour Calculate process
+
+  
+  if (BFlav == "girl-Scouts") {
+    BFlavCost = 0.75;
   }
   
-    // Drink calculate Process
-  if (Drink == 'Ginger Ale') {
-    let drinkCost = gAPrice;
+  else if (BFlav == "oreo") 
+  {
+    BFlavCost = 0.50;
+  }
+  
+  else if (BFlav == "mint-Oreo") 
+  {
+    BFlavCost = 0.70;
+  }
+  
+  else if (BFlav == "rocky-Road") 
+  {
+    BFlavCost = 0.30;
   }
 
-  else if (Drink == 'Pepsi') {
-    let drinkCost = pepsiPrice;
+  else if (BFlav == "candy-Cane") 
+  {
+    BFlavCost = 0.90;
   }
 
-  else if (Drink == 'Coca-Cola') {
-    let drinkCost = cocaColaPrice;
-  }
+    
 
-  else if (Drink == 'Fanta') {
-    let drinkCost = fantaPrice;
-  }
-
-  else if (Drink == 'Dr-Pepper') {
-    let drinkCost = drPepperPrice;
-  }
-
-  else {
-    let drinkCost = 0;
-  }
-
+  
     // Variables
-  //let YDrinkSub = BSize + BFlav + drinkCost;
+  let YDrinkSub = BSizeCost + BFlavCost + drinkCost;
+
+  let YDrinkTax = YDrinkSub * taxRate;
+
+
 
   let NDrinkSub = BSizeCost + BFlavCost;
 
-  if (1 > 0) {
-    document.getElementById('greeting').innerHTML = 'hi'
+  let NDrinkTax = NDrinkSub * taxRate;
+
+  
+     
+
+  
+      // Order calculate Process
+    
+  if (drinkCost > 0) {
+    let YDrinkTotal = YDrinkSub + YDrinkTax;
+
+    //document.getElementById("greeting").innerHTML = "Hi"
+    
+    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with a " + Drink + " on the side. Your order totals to $" + YDrinkTotal.toFixed(2) + "."
   }
 
+  else {
+    let NDrinkTotal = NDrinkSub + NDrinkTax;
+    
+    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with nothig on the side. Your order totals to $" + NDrinkTotal.toFixed(2) + "."
+  }
 
-
-    // Order calculate Process
-    // YDrinkSub tax
-  //if (DrinkCost > 0) {
-    //let YDrinkTax = YDrinkSub * TaxRate
-    //let YDrinkTotal = YDrinkSub + YDrinkTax
-    //document.getElementById("greeting").innerHTML = "You are " + DrinkCost + ", which means you are eligable for a student discount."
-  //}
   
-    // NDrinkSub tax
-  //else if ((userAge >= 12) && (userAge <= 21)) {
-  //  document.getElementById("greeting").innerHTML = "You are " + userAge + ", which means you are eligable for a student discount."
-  //}
 
-
-
-
-  //else if ((userAge >= 12) && (userAge <= 21)) {
-  //  document.getElementById("greeting").innerHTML = "You are " + userAge + ", which means you are eligable for a student discount."
-  //}
+      }
