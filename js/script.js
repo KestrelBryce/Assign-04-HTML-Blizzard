@@ -138,7 +138,7 @@ function displayGreeting () {
   else {
     let NDrinkTotal = NDrinkSub + NDrinkTax;
     
-    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with nothig on the side. Your order totals to $" + NDrinkTotal.toFixed(2) + "."
+    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with nothing on the side. Your order totals to $" + NDrinkTotal.toFixed(2) + "."
   }
 
   
