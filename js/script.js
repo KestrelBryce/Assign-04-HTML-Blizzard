@@ -49,7 +49,7 @@ function displayGreeting () {
 
     // Drink calculate process
   
-  if (Drink == 'Ginger-ale') {
+  if (Drink == "Ginger ale") {
     drinkCost = 1.89;
   }
 
@@ -68,12 +68,12 @@ function displayGreeting () {
     drinkCost = 1.49;
   }
 
-  else if (Drink == "Dr-Pepper") 
+  else if (Drink == "Dr.Pepper") 
   {
     drinkCost = 1.59;
   }
 
-  else if (Drink == "No-Drink") 
+  else if (Drink == "no drink") 
   {
     drinkCost = 0;
   }
@@ -83,26 +83,26 @@ function displayGreeting () {
     // Flavour Calculate process
 
   
-  if (BFlav == "girl-Scouts") {
+  if (BFlav == "Girl Scouts") {
     BFlavCost = 0.75;
   }
   
-  else if (BFlav == "oreo") 
+  else if (BFlav == "Oreo") 
   {
     BFlavCost = 0.50;
   }
   
-  else if (BFlav == "mint-Oreo") 
+  else if (BFlav == "Mint Oreo") 
   {
     BFlavCost = 0.70;
   }
   
-  else if (BFlav == "rocky-Road") 
+  else if (BFlav == "Rocky Road") 
   {
     BFlavCost = 0.30;
   }
 
-  else if (BFlav == "candy-Cane") 
+  else if (BFlav == "Candy Cane chill") 
   {
     BFlavCost = 0.90;
   }
