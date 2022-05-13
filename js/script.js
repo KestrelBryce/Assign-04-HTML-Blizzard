@@ -3,7 +3,6 @@
 
 function displayGreeting () {
 
- //document.getElementById("greeting").innerHTML = "Hi"
     // user input
   let BSize = (document.getElementById('insert-Size-Here').value);
 
@@ -11,22 +10,9 @@ function displayGreeting () {
   
   let Drink = (document.querySelector('input[name=insert-Drink-Here]:checked').value);
 
-  //document.getElementById("greeting").innerHTML = "Hi"
     
     // Constants
   let taxRate = 0.13;
-
-  /*let gAPrice = 1.89;
-
-  let pepsiPrice = 1.79;
-
-  let cocaColaPrice = 1.99;
-
-  let fantaPrice = 1.49;
-
-  let drPepperPrice = 1.59;*/
-
-  //document.getElementById("greeting").innerHTML = "Hi"
   
     // Remember to write || by using shift on \ twice
 
@@ -42,10 +28,7 @@ function displayGreeting () {
   else {
     BSizeCost = 5.30;
   }
-    //document.getElementById("greeting").innerHTML = "Hi"
 
-    //document.getElementById("greeting").innerHTML = BSizeCost
-  //document.getElementById("greeting").innerHTML = Drink
 
     // Drink calculate process
   
