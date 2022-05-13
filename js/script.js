@@ -132,13 +132,13 @@ function displayGreeting () {
 
     //document.getElementById("greeting").innerHTML = "Hi"
     
-    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with a " + Drink + " on the side. Your order totals to $" + YDrinkTotal.toFixed(2) + "."
+    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with a " + Drink + " on the side. Your subtotal is $" + YDrinkSub.toFixed(2) + ", and your tax is $" + YDrinkTax.toFixed(2) + ", so your order totals to $" + YDrinkTotal.toFixed(2) + "."
   }
 
   else {
     let NDrinkTotal = NDrinkSub + NDrinkTax;
     
-    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with nothing on the side. Your order totals to $" + NDrinkTotal.toFixed(2) + "."
+    document.getElementById("greeting").innerHTML = "You ordered a " + BSize + " " + BFlav + " Blizzard with nothing on the side. Your subtotal is $" + NDrinkSub.toFixed(2) + ", and your tax is $" + NDrinkTax.toFixed(2) + ", so your order totals to $" + NDrinkTotal.toFixed(2) + "."
   }
 
   
